@@ -170,13 +170,13 @@ class Machine {
   }
 
   reboot() {
-      
-     function inner() {
+
+    return ()=> {
       this.needs_reboot = false;
       this.wear_and_tear_count -= 10;
-      return this
+      
     }
-    return inner
+   
   }
 }
 

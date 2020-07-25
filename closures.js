@@ -207,11 +207,10 @@ function secretNumber() {
 */
 
 function timeOutCounter() {
-  for (var i = 0; i <= 5; i++) {
-    var privateConsole = function() {
-     return console.log(i);
-    }
-    setTimeout(privateConsole(), i * 1000);
+  for (let i = 0; i <= 5; i++) {
+    setTimeout(function() {
+      console.log(i)
+    }, i * 1000);
   }
-}
+  }
 timeOutCounter();
